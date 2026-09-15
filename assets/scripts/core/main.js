@@ -1,3 +1,7 @@
+if (Math.random() < 0.2) {
+  window.setTimeout(() => window.alert('Get off games and take a break.'), 0);
+}
+
 function checkForAutoLoad() {
   const assetsLoaded = localStorage.getItem('webdash_assets_loaded') === 'true';
   const lastLoadTime = parseInt(localStorage.getItem('webdash_last_load_time') || '0');
